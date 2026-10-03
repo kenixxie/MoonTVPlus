@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/_next/static/*",
+    "/_next/image/*",
+    "/*.ico",
+    "/*.png",
+    "/*.svg",
+    "/*.woff2",
+    "/manifest.json"
+  ]
+}
