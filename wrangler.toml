@@ -18,9 +18,5 @@ name = "DO_BUCKET_CACHE_PURGE"
 class_name = "BucketCachePurge"
 script_name = "moontv"
 
-[[migrations]]
-tag = "v1"
-new_classes = ["DOQueueHandler", "ShardedTagCache", "BucketCachePurge"]
-
 [vars]
 PASSWORD = "chinaunicom123"
