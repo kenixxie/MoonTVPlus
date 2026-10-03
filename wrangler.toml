@@ -1,7 +1,23 @@
 name = "moontv"
-pages_build_output_dir = ".open-next"
+main = ".open-next/worker.js"
 compatibility_date = "2025-09-01"
 compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[durable_objects.bindings]]
+name = "DO_QUEUE"
+class_name = "DOQueueHandler"
+
+[[durable_objects.bindings]]
+name = "DO_TAG_CACHE"
+class_name = "ShardedTagCache"
+
+[[durable_objects.bindings]]
+name = "DO_BUCKET_CACHE_PURGE"
+class_name = "BucketCachePurge"
 
 [vars]
 PASSWORD = "chinaunicom123"
