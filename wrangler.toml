@@ -6,14 +6,21 @@ compatibility_flags = ["nodejs_compat"]
 [[durable_objects.bindings]]
 name = "DO_QUEUE"
 class_name = "DOQueueHandler"
+script_name = "moontv"
 
 [[durable_objects.bindings]]
 name = "DO_TAG_CACHE"
 class_name = "ShardedTagCache"
+script_name = "moontv"
 
 [[durable_objects.bindings]]
 name = "DO_BUCKET_CACHE_PURGE"
 class_name = "BucketCachePurge"
+script_name = "moontv"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["DOQueueHandler", "ShardedTagCache", "BucketCachePurge"]
 
 [vars]
 PASSWORD = "chinaunicom123"
